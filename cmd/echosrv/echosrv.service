@@ -1,0 +1,11 @@
+[Unit]
+Description=Proxy Echo Server (standalone, for anonymity verification)
+After=network.target
+
+[Service]
+ExecStart=/www/wwwroot/echosrv/echosrv -addr 0.0.0.0:8849 -path /get
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

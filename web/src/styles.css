@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Microsoft YaHei', 'PingFang SC', system-ui, -apple-system, sans-serif;
+  background: #f4f6f9;
+  color: #1f2937;
+}
+
+/* 表单类组件不参与 scoped 时的全局补充（本项目均使用 scoped 样式，这里只放全局过渡） */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.18s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.mono {
+  font-family: Consolas, 'Courier New', monospace;
+}
+
+.muted {
+  color: #8a94a6;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}

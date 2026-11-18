@@ -1,0 +1,25 @@
+# 编译产物
+/bin/
+*.exe
+*.exe~
+proxyscanner
+proxyscanner.exe
+
+# 运行期数据库（SQLite，含 WAL）
+*.db
+*.db-shm
+*.db-wal
+
+# 前端依赖与构建日志
+web/node_modules/
+web/build.log
+npm-debug.log*
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
